@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+:root {
+    --primary-color: #FFB600;
+    --secondary-color: #fff;
+}
+
+body {
+    font-family: 'Raleway',
+        sans-serif;
+    font-size: 90%;
+    font-weight: 300;
+}
+
+/* Start Header Section */
+
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/img/bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    position: relative;
+}
+
+.btns {
+    color: var(--secondary-color);
+
+    position: relative;
+    overflow: hidden;
+
+    transition: all .2s;
+
+    z-index: 1;
+}
+
+.btns:hover {
+    color: var(--primary-color);
+}
+
+.btns::before {
+
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary-color);
+    line-height: 40px;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    transform: translateY(100%);
+
+    transition: all .2s linear;
+
+    z-index: -1;
+
+}
+
+.btns:hover::before {
+    transform: translateY(0%);
+}
+
+.banners {
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bannersbtns {
+    margin-top: 3rem;
+}
+
+.navbs {
+    /* background: linear-gradient(25deg, var(--primary-color) 30%, rgba(0, 0, 0, 0.9) 25%); */
+    padding: 15px 30px;
+    border-bottom: 1px solid #eee;
+
+    /* position: relative; */
+
+    /* position: fixed; */
+
+    z-index: 1000;
+
+    transition: all 5s;
+}
+
+.navbsbgs {
+    background: linear-gradient(30deg, var(--primary-color) 30%, rgba(0, 0, 0, 0.9) 25%);
+    border: 0;
+    transition: all 5s;
+}
+
+.navbaritems a {
+    font-size: 12px;
+}
+
+.navbs::before {
+    /* content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    transform: translateY(-100%);
+
+    transition: all .5s;
+
+
+    z-index: -1; */
+}
+
+.navbs:hover::before {
+    /* transform: translateY(0%); */
+}
+
+.lines1,
+.lines2,
+.lines3 {
+    width: 30px;
+    height: 3px;
+    margin: 7px;
+
+    transition: all .5s linear;
+}
+
+.crossxs .lines1 {
+    transform: rotate(220deg) translate(-7px, -7px);
+}
+
+.crossxs .lines2 {
+    scale: 0;
+    opacity: 0;
+}
+
+.crossxs .lines3 {
+    transform: rotate(-220deg) translate(-7px, 7px);
+}
+
+.bannerheaderh3s {
+    font-size: 1.3rem;
+    animation-name: banneranniforh3;
+    animation-duration: 2s;
+}
+
+.bannerheaderh1s {
+    font-size: 3.5rem;
+    font-weight: bold;
+    animation-name: banneranniforh1;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-fill-mode: backwards;
+}
+
+.btnsanni {
+
+    animation-name: banneranniforbtnsanni;
+    animation-duration: 2s;
+    animation-delay: .9s;
+    animation-fill-mode: backwards;
+
+
+}
+
+@keyframes banneranniforh3 {
+
+    0% {
+        transform: translate(-200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes banneranniforh1 {
+
+    0% {
+        transform: translate(200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes banneranniforbtnsanni {
+
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* End Header Section */
+
+
+
+/* Start Our Service Section */
+
+.titles {
+
+    width: 70%;
+
+    margin: auto;
+
+    position: relative;
+
+    transition: all .5s;
+}
+
+.titles::before {
+    content: '';
+
+    width: 5%;
+    height: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--primary-color);
+    border-radius: 2px;
+
+    position: absolute;
+    left: 50%;
+    bottom: -15.8%;
+    transform: translate(-50%);
+}
+
+.titles::after {
+    content: '';
+
+    width: 25%;
+    height: 3px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #eee;
+
+    position: absolute;
+    left: 50%;
+    bottom: -15%;
+    transform: translate(-50%);
+
+    z-index: -1;
+}
+
+.titles h5 {
+    font-size: 15px;
+}
+
+.titles p {
+    font-size: 14px;
+}
+
+.icons {
+    color: var(--primary-color);
+}
+
+.paragraphs {
+    font-size: 14px;
+}
+
+
+/* End Our Service Section */
+
+
+
+/* Start Our Project Section */
+
+.ourprojects {
+    /* height: 100vh; */
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../assets/img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
+}
+
+.projectlists {
+    /* background-color: var(--primary-color); */
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding: 10px 15px;
+
+    cursor: pointer;
+}
+
+.activeitems {
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.img-boxs {
+    margin: 10px 15px;
+
+    position: relative;
+
+    z-index: 1;
+
+    overflow: hidden;
+}
+
+.img-boxs::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    transform: rotate(-120deg) translateY(500px);
+    opacity: 0;
+    transform-origin: center;
+
+    z-index: 0;
+
+    transition: all .5s;
+}
+
+.img-boxs:hover::before {
+    opacity: 1;
+    transform: rotate(0deg) translateY(0px);
+}
+
+/* .img-boxs::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+} */
+
+.imgicons {
+    position: relative;
+}
+
+.captions {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center; */
+
+    color: var(--secondary-color);
+    text-align: left;
+
+    position: absolute;
+    left: 15%;
+    bottom: -100px;
+
+    transition: all .3s;
+}
+
+.captions h5 {
+    font-weight: bold;
+}
+
+.captions p {
+    color: var(--primary-color);
+}
+
+.img-boxs:hover .captions {
+    bottom: 0;
+}
+
+.imgicons a i {
+
+
+    position: absolute;
+    right: 5%;
+    top: -75px;
+    /* background-color: var(--primary-color); */
+    color: var(--primary-color);
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+
+    transition: all .5s;
+
+
+
+}
+
+.img-boxs:hover .imgicons a i {
+
+    top: 15px;
+}
+
+/* End Our Project Section */
