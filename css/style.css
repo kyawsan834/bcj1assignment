@@ -89,6 +89,11 @@ header {
     transition: all 5s;
 }
 
+.navbuttons:active {
+    outline: none;
+
+}
+
 .navbsbgs {
     background: linear-gradient(30deg, var(--primary-color) 30%, rgba(0, 0, 0, 0.9) 25%);
     border: 0;
@@ -254,7 +259,7 @@ header {
     justify-content: center;
     align-items: center;
 
-    background: #eee;
+    background: rgb(224, 224, 224);
 
     position: absolute;
     left: 50%;
