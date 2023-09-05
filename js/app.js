@@ -5,6 +5,14 @@
 
     // console.log("hay");
 
+    // Start preloader
+
+    $(window).on("load",function(){
+        $(".preloader").fadeOut(1000);
+    });
+
+    // End preloader
+
     // for burger
     $(".navbuttons").click(function () {
         $(".navbuttons").toggleClass("crossxs");

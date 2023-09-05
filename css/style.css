@@ -1,111 +1,155 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap");
 
 :root {
-    --primary-color: #FFB600;
-    --secondary-color: #fff;
+  --primary-color: #ffb600;
+  --secondary-color: #fff;
 }
 
 body {
-    font-family: 'Raleway',
-        sans-serif;
-    font-size: 90%;
-    font-weight: 300;
+  font-family: "Raleway", sans-serif;
+  font-size: 90%;
+  font-weight: 300;
 }
+
+/* Start Preloader */
+
+.preloader {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 2000;
+}
+
+.preloader .loader {
+  width: 50px;
+  height: 50px;
+
+  /* background: var(--primary-color); */
+  border: 2px solid var(--primary-color);
+  border-top: 2px solid var(--secondary-color);
+  border-radius: 50px;
+
+  animation: loader 1s linear infinite;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* End Preloader */
 
 /* Start Header Section */
 
 header {
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/img/bg1.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/img/bg1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 
-    position: relative;
+  position: relative;
 }
 
 .btns {
-    color: var(--secondary-color);
+  color: var(--secondary-color);
 
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 
-    transition: all .2s;
+  transition: all 0.2s;
 
-    z-index: 1;
+  z-index: 1;
 }
 
 .btns:hover {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .btns::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary-color);
+  line-height: 40px;
 
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-color: var(--secondary-color);
-    line-height: 40px;
+  position: absolute;
+  left: 0;
+  top: 0;
 
-    position: absolute;
-    left: 0;
-    top: 0;
+  transform: translateY(100%);
 
-    transform: translateY(100%);
+  transition: all 0.2s linear;
 
-    transition: all .2s linear;
-
-    z-index: -1;
-
+  z-index: -1;
 }
 
 .btns:hover::before {
-    transform: translateY(0%);
+  transform: translateY(0%);
 }
 
 .banners {
-
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .bannersbtns {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 .navbs {
-    /* background: linear-gradient(25deg, var(--primary-color) 30%, rgba(0, 0, 0, 0.9) 25%); */
-    padding: 15px 30px;
-    border-bottom: 1px solid #eee;
+  /* background: linear-gradient(25deg, var(--primary-color) 30%, rgba(0, 0, 0, 0.9) 25%); */
+  padding: 15px 30px;
+  border-bottom: 1px solid #eee;
 
-    /* position: relative; */
+  /* position: relative; */
 
-    /* position: fixed; */
+  /* position: fixed; */
 
-    z-index: 1000;
+  z-index: 1000;
 
-    transition: all 5s;
+  transition: all 0.5s;
 }
 
 .navbuttons:active {
-    outline: none;
-
+  outline: none;
 }
 
 .navbsbgs {
-    background: linear-gradient(30deg, var(--primary-color) 30%, rgba(0, 0, 0, 0.9) 25%);
-    border: 0;
-    transition: all 5s;
+  background: #5f5f5f;
+  color: #000;
+  border: 0;
+  padding: 2px;
+  transition: all 0.2s;
 }
 
 .navbaritems a {
-    font-size: 12px;
+  font-size: 12px;
+}
+
+.navbaritems .navlinks {
+  color: #000;
 }
 
 .navbs::before {
-    /* content: '';
+  /* content: '';
     width: 100%;
     height: 100%;
     background-color: var(--primary-color);
@@ -123,230 +167,219 @@ header {
 }
 
 .navbs:hover::before {
-    /* transform: translateY(0%); */
+  /* transform: translateY(0%); */
 }
 
 .lines1,
 .lines2,
 .lines3 {
-    width: 30px;
-    height: 3px;
-    margin: 7px;
+  width: 30px;
+  height: 3px;
+  margin: 7px;
 
-    transition: all .5s linear;
+  transition: all 0.5s linear;
 }
 
 .crossxs .lines1 {
-    transform: rotate(220deg) translate(-7px, -7px);
+  transform: rotate(220deg) translate(-7px, -7px);
 }
 
 .crossxs .lines2 {
-    scale: 0;
-    opacity: 0;
+  scale: 0;
+  opacity: 0;
 }
 
 .crossxs .lines3 {
-    transform: rotate(-220deg) translate(-7px, 7px);
+  transform: rotate(-220deg) translate(-7px, 7px);
 }
 
 .bannerheaderh3s {
-    font-size: 1.3rem;
-    animation-name: banneranniforh3;
-    animation-duration: 2s;
+  font-size: 1.3rem;
+  animation-name: banneranniforh3;
+  animation-duration: 2s;
 }
 
 .bannerheaderh1s {
-    font-size: 3.5rem;
-    font-weight: bold;
-    animation-name: banneranniforh1;
-    animation-duration: 2s;
-    animation-delay: .5s;
-    animation-fill-mode: backwards;
+  font-size: 3.5rem;
+  font-weight: bold;
+  animation-name: banneranniforh1;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
 }
 
 .btnsanni {
-
-    animation-name: banneranniforbtnsanni;
-    animation-duration: 2s;
-    animation-delay: .9s;
-    animation-fill-mode: backwards;
-
-
+  animation-name: banneranniforbtnsanni;
+  animation-duration: 2s;
+  animation-delay: 0.9s;
+  animation-fill-mode: backwards;
 }
 
 @keyframes banneranniforh3 {
+  0% {
+    transform: translate(-200px);
+    opacity: 0;
+  }
 
-    0% {
-        transform: translate(-200px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translate(0px);
-        opacity: 1;
-    }
+  100% {
+    transform: translate(0px);
+    opacity: 1;
+  }
 }
 
 @keyframes banneranniforh1 {
+  0% {
+    transform: translate(200px);
+    opacity: 0;
+  }
 
-    0% {
-        transform: translate(200px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translate(0px);
-        opacity: 1;
-    }
+  100% {
+    transform: translate(0px);
+    opacity: 1;
+  }
 }
 
 @keyframes banneranniforbtnsanni {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
 
-    0% {
-        transform: scale(0);
-        opacity: 0;
-    }
-
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /* End Header Section */
 
-
-
 /* Start Our Service Section */
 
 .titles {
+  width: 70%;
 
-    width: 70%;
+  margin: auto;
 
-    margin: auto;
+  position: relative;
 
-    position: relative;
-
-    transition: all .5s;
+  transition: all 0.5s;
 }
 
 .titles::before {
-    content: '';
+  content: "";
 
-    width: 5%;
-    height: 5px;
+  width: 5%;
+  height: 5px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    background: var(--primary-color);
-    border-radius: 2px;
+  background: var(--primary-color);
+  border-radius: 2px;
 
-    position: absolute;
-    left: 50%;
-    bottom: -15.8%;
-    transform: translate(-50%);
+  position: absolute;
+  left: 50%;
+  bottom: -15.8%;
+  transform: translate(-50%);
 }
 
 .titles::after {
-    content: '';
+  content: "";
 
-    width: 25%;
-    height: 3px;
+  width: 25%;
+  height: 3px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    background: rgb(224, 224, 224);
+  background: rgb(224, 224, 224);
 
-    position: absolute;
-    left: 50%;
-    bottom: -15%;
-    transform: translate(-50%);
+  position: absolute;
+  left: 50%;
+  bottom: -15%;
+  transform: translate(-50%);
 
-    z-index: -1;
+  z-index: -1;
 }
 
 .titles h5 {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 .titles p {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .icons {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .paragraphs {
-    font-size: 14px;
+  font-size: 14px;
 }
 
-
 /* End Our Service Section */
-
-
 
 /* Start Our Project Section */
 
 .ourprojects {
-    /* height: 100vh; */
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../assets/img/bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left;
-    background-attachment: fixed;
+  /* height: 100vh; */
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../assets/img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  background-attachment: fixed;
 }
 
 .projectlists {
-    /* background-color: var(--primary-color); */
-    color: var(--secondary-color);
-    border-bottom: 2px solid var(--secondary-color);
-    padding: 10px 15px;
+  /* background-color: var(--primary-color); */
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+  padding: 10px 15px;
 
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .activeitems {
-    background-color: var(--primary-color);
-    border: none;
+  background-color: var(--primary-color);
+  border: none;
 }
 
 .img-boxs {
-    margin: 10px 15px;
+  margin: 10px 15px;
 
-    position: relative;
+  position: relative;
 
-    z-index: 1;
+  z-index: 1;
 
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .img-boxs::before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
 
-    position: absolute;
-    left: 0;
-    top: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
 
-    transform: rotate(-120deg) translateY(500px);
-    opacity: 0;
-    transform-origin: center;
+  transform: rotate(-120deg) translateY(500px);
+  opacity: 0;
+  transform-origin: center;
 
-    z-index: 0;
+  z-index: 0;
 
-    transition: all .5s;
+  transition: all 0.5s;
 }
 
 .img-boxs:hover::before {
-    opacity: 1;
-    transform: rotate(0deg) translateY(0px);
+  opacity: 1;
+  transform: rotate(0deg) translateY(0px);
 }
 
 /* .img-boxs::after {
@@ -361,59 +394,211 @@ header {
 } */
 
 .imgicons {
-    position: relative;
+  position: relative;
 }
 
 .captions {
-    /* display: flex;
+  /* display: flex;
     justify-content: center;
     align-items: center;
     align-self: center; */
 
-    color: var(--secondary-color);
-    text-align: left;
+  color: var(--secondary-color);
+  text-align: left;
 
-    position: absolute;
-    left: 15%;
-    bottom: -100px;
+  position: absolute;
+  left: 15%;
+  bottom: -100px;
 
-    transition: all .3s;
+  transition: all 0.3s;
 }
 
 .captions h5 {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .captions p {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .img-boxs:hover .captions {
-    bottom: 0;
+  bottom: 0;
 }
 
 .imgicons a i {
+  position: absolute;
+  right: 5%;
+  top: -75px;
+  /* background-color: var(--primary-color); */
+  color: var(--primary-color);
+  padding: 10px;
+  font-size: 20px;
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
 
-
-    position: absolute;
-    right: 5%;
-    top: -75px;
-    /* background-color: var(--primary-color); */
-    color: var(--primary-color);
-    padding: 10px;
-    font-size: 20px;
-    border: 1px solid var(--primary-color);
-    border-radius: 50%;
-
-    transition: all .5s;
-
-
-
+  transition: all 0.5s;
 }
 
 .img-boxs:hover .imgicons a i {
-
-    top: 15px;
+  top: 15px;
 }
 
 /* End Our Project Section */
+
+/* Start Our Features Section */
+
+.headings h5 {
+  font-size: 16px;
+  padding: 5px;
+}
+
+.headings p {
+  font-size: 14px;
+  color: #888;
+}
+
+/* End Our Features Section */
+
+/* Start Service Section */
+
+.services {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/img/bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.texts {
+  text-shadow: 0.5px 0.3px 1px #e2e2e2;
+}
+
+.carouselsbtns {
+  /* position: relative; */
+}
+
+.carouselsbtns li {
+  content: "";
+  background-color: var(--primary-color);
+}
+
+/* End Service Section */
+
+/* Start Contact Section */
+
+.form-group .form-control {
+  background: #f4f4f4;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  outline: none;
+}
+
+.form-group .form-control:focus {
+  box-shadow: none;
+}
+
+/* End Contact Section */
+
+/* Start Member Section */
+
+.members {
+  background: url("../assets/img/pattern.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* background-attachment: fixed; */
+}
+
+.card {
+  border: none;
+  border-radius: 0px;
+  overflow: hidden;
+
+  /* z-index: 2; */
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.card .card-infos {
+  width: 100%;
+  height: 100%;
+
+  z-index: 2;
+
+  /* overflow: hidden; */
+}
+
+.card-infos .cardtexts {
+  color: #fff;
+
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5px;
+
+  position: absolute;
+
+  left: 50%;
+  top: 94%;
+
+  transition: all .5s;
+
+  transform: translate(-50%, -50%);
+
+  z-index: 1;
+}
+
+.card-infos::before,
+.card-infos::after {
+  content: "";
+
+  position: absolute;
+
+  transition: all .5s;
+}
+
+.card-infos::before {
+  content: "";
+  width: 220px;
+  height: 650px;
+  background-color: #222;
+
+  top: 5%;
+  left: 0;
+
+  transform: skewX(110deg) rotate(100deg);
+
+  z-index: -1;
+}
+
+.card-infos::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--primary-color);
+
+  left: 0;
+  top: 65%;
+  z-index: -2;
+}
+
+.card:hover .cardtexts {
+  top: 77.5%;
+}
+
+.card:hover .card-infos::before {
+  top: -12%;
+}
+.card:hover .card-infos::after {
+  top: 50%;
+}
+
+/* End Member Section */
