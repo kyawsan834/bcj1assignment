@@ -128,12 +128,23 @@ header {
   transition: all 0.5s;
 }
 
-.navbuttons:active {
+.navbar-toggler {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 10px;
   outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler:focus {
+  border: none;
+  border-radius: none;
+  box-shadow: none;
 }
 
 .navbsbgs {
-  background: #5f5f5f;
+  background: #2e2828d8;
   color: #000;
   border: 0;
   padding: 2px;
@@ -170,18 +181,24 @@ header {
   /* transform: translateY(0%); */
 }
 
+.navbuttons {
+  background: var(--primary-color);
+  padding: 8.8px;
+  border: none;
+}
+
 .lines1,
 .lines2,
 .lines3 {
-  width: 30px;
-  height: 3px;
-  margin: 7px;
+  width: 21px;
+  height: 2px;
+  margin: 5px;
 
   transition: all 0.5s linear;
 }
 
 .crossxs .lines1 {
-  transform: rotate(220deg) translate(-7px, -7px);
+  transform: rotate(220deg) translate(-5px, -5px);
 }
 
 .crossxs .lines2 {
@@ -190,7 +207,7 @@ header {
 }
 
 .crossxs .lines3 {
-  transform: rotate(-220deg) translate(-7px, 7px);
+  transform: rotate(-220deg) translate(-5px, 5px);
 }
 
 .bannerheaderh3s {
@@ -523,6 +540,10 @@ header {
   overflow: hidden;
 }
 
+.card img {
+  width: 100%;
+}
+
 .card .card-infos {
   width: 100%;
   height: 100%;
@@ -548,7 +569,7 @@ header {
   left: 50%;
   top: 94%;
 
-  transition: all .5s;
+  transition: all 0.5s;
 
   transform: translate(-50%, -50%);
 
@@ -561,16 +582,16 @@ header {
 
   position: absolute;
 
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .card-infos::before {
   content: "";
-  width: 220px;
-  height: 650px;
+  width: 550px;
+  height: 850px;
   background-color: #222;
 
-  top: 5%;
+  top: 0;
   left: 0;
 
   transform: skewX(110deg) rotate(100deg);
