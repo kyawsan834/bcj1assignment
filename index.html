@@ -1,776 +1,1361 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Assignment</title>
 
     <!-- bootstrap css1 js1 -->
-    <link href="./assets/libs/bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="./assets/libs/bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css" />
 
     <!-- jQuery ui css1 js1 -->
-    <link href="./assets/libs/jquery-ui-1.13.2/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="./assets/libs/jquery-ui-1.13.2/jquery-ui.min.css"
+      rel="stylesheet"
+      type="text/css" />
 
     <!-- lightbox css1 js1 -->
-    <link href="./assets/libs/lightbox2-2.11.4/dist/css/lightbox.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="./assets/libs/lightbox2-2.11.4/dist/css/lightbox.min.css"
+      rel="stylesheet"
+      type="text/css" />
 
     <!-- fontawesome css1 -->
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
-        integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+      integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm"
+      crossorigin="anonymous" />
 
-
-    <link rel="stylesheet" href="./assets/libs/icofont/icofont.min.css">
+    <link rel="stylesheet" href="./assets/libs/icofont/icofont.min.css" />
 
     <!-- icon -->
-    <link href="./assets/img/favicon.png" rel="icon" type="image/png" sizes="16x16" />
+    <link
+      href="./assets/img/favicon.png"
+      rel="icon"
+      type="image/png"
+      sizes="16x16" />
 
     <!-- custom css1 -->
     <link href="./css/style.css" rel="stylesheet" type="text/css" />
-</head>
+  </head>
 
-<body>
-
-    <!-- <div class="preloader">
+  <body>
+    <div class="preloader">
         <div class="loader"></div>
-    </div> -->
-
-
+    </div>
 
     <!-- Start Header Section -->
 
     <header>
-        <!-- start navbar section -->
+      <!-- start navbar section -->
 
-        <nav class="navbar navbar-expand-lg fixed-top p-3 navbs  ">
+      <nav class="navbar navbar-expand-lg fixed-top p-3 navbs">
+        <a href="index.html" class="navbar-brand mx-5">
+          <img src="./assets/img/logo-light.png" width="100px" alt="logo" />
+        </a>
 
-            <a href="index.html" class="navbar-brand mx-5">
-                <img src="./assets/img/logo-light.png" width="100px" alt="logo">
-            </a>
+        <button
+          class="navbar-toggler navbuttons"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav">
+          <div class="bg-light lines1"></div>
+          <div class="bg-light lines2"></div>
+          <div class="bg-light lines3"></div>
+        </button>
 
-            <button class=" navbar-toggler navbuttons " data-bs-toggle="collapse" data-bs-target="#nav">
-                <div class="bg-light lines1"></div>
-                <div class="bg-light lines2"></div>
-                <div class="bg-light lines3"></div>
+        <div
+          id="nav"
+          class="navbar-collapse collapse justify-content-end me-5 pe-5">
+          <ul class="navbar-nav">
+            <li class="nav-item navbaritems">
+              <a
+                href="#"
+                class="nav-link fw-bold text-uppercase text-light mx-3 navlinks"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item navbaritems">
+              <a
+                href="#"
+                class="nav-link fw-bold text-uppercase text-light mx-3 navlinks"
+                >About</a
+              >
+            </li>
+            <li class="nav-item navbaritems">
+              <a
+                href="#"
+                class="nav-link fw-bold text-uppercase text-light mx-3 navlinks"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item navbaritems">
+              <a
+                href="#"
+                class="nav-link fw-bold text-uppercase text-light mx-3 navlinks"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item navbaritems">
+              <a
+                href="#"
+                class="nav-link fw-bold text-uppercase text-light mx-3 navlinks"
+                >Contact</a
+              >
+            </li>
+            <li class="nav-item navbaritems">
+              <a
+                href="#"
+                class="nav-link fw-bold text-uppercase text-light mx-3 navlinks"
+                >Team</a
+              >
+            </li>
+            <li class="nav-item navbaritems">
+              <a
+                href="#"
+                class="nav-link fw-bold text-uppercase text-light mx-3 navlinks"
+                >Blog</a
+              >
+            </li>
+          </ul>
+          <div class="">
+            <button class="btn btn-md fw-bold rounded-0 btn-warning mx-3. btns">
+              Free Quote
             </button>
-
-
-            <div id="nav" class="navbar-collapse collapse justify-content-end me-5 pe-5 ">
-                <ul class="navbar-nav ">
-                    <li class="nav-item navbaritems ">
-                        <a href="#" class="nav-link fw-bold text-uppercase text-light mx-3 navlinks">Home</a>
-                    </li>
-                    <li class="nav-item navbaritems ">
-                        <a href="#" class="nav-link fw-bold text-uppercase text-light mx-3 navlinks">About</a>
-                    </li>
-                    <li class="nav-item navbaritems ">
-                        <a href="#" class="nav-link fw-bold text-uppercase text-light mx-3 navlinks">Portfolio</a>
-                    </li>
-                    <li class="nav-item navbaritems ">
-                        <a href="#" class="nav-link fw-bold text-uppercase text-light mx-3 navlinks">Services</a>
-                    </li>
-                    <li class="nav-item navbaritems ">
-                        <a href="#" class="nav-link fw-bold text-uppercase text-light mx-3 navlinks">Contact</a>
-                    </li>
-                    <li class="nav-item navbaritems ">
-                        <a href="#" class="nav-link fw-bold text-uppercase text-light mx-3 navlinks">Team</a>
-                    </li>
-                    <li class="nav-item navbaritems ">
-                        <a href="#" class="nav-link fw-bold text-uppercase text-light mx-3 navlinks">Blog</a>
-                    </li>
-                </ul>
-                <div class="">
-                    <button class="btn btn-md fw-bold rounded-0  btn-warning mx-3. btns ">Free Quote</button>
-                </div>
-            </div>
-        </nav>
-
-        <!-- end navbar section -->
-
-        <!-- start banner section -->
-
-        <div class="img-fluid banners ">
-            <div class="row text-center text-wrap ">
-                <div class="col">
-                    <div class="text-center text-light  bannerstitles">
-                        <h3 class="mb-3 bannerheaderh3s">Best Quality</h3>
-                        <h1 class="fw-md-bold display-md-3 bannerheaderh1s ">Providing All Kinds Of Construction
-                            Services
-                        </h1>
-                    </div>
-                    <div class="text-center text-white fw-bold bannersbtns">
-                        <button type="button" class="btn btn-md fw-bold rounded-0  btn-warning btns btnsanni">
-                            Our Services
-                        </button>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+      </nav>
 
-        <!-- end banner section -->
+      <!-- end navbar section -->
+
+      <!-- start banner section -->
+
+      <div class="img-fluid banners">
+        <div class="row text-center text-wrap">
+          <div class="col">
+            <div class="text-center text-light bannerstitles">
+              <h3 class="mb-3 bannerheaderh3s">Best Quality</h3>
+              <h1 class="fw-md-bold display-md-3 bannerheaderh1s">
+                Providing All Kinds Of Construction Services
+              </h1>
+            </div>
+            <div class="text-center text-white fw-bold bannersbtns">
+              <button
+                type="button"
+                class="btn btn-md fw-bold rounded-0 btn-warning btns btnsanni">
+                Our Services
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- end banner section -->
     </header>
 
     <!-- End Header Section -->
 
-
-
     <!-- Start Our Service Section -->
 
     <section id="ourservices" class="p-5">
+      <div class="container">
+        <!-- start title -->
 
-        <div class="container">
-
-            <!-- start title -->
-
-            <div class="row ">
-                <div class="col text-center mx-auto">
-                    <div class="titles">
-                        <h5 class="text-uppercase text-muted">What We Do?</h5>
-                        <h1 class="text-uppercase mb-3 fw-bold">Our Services</h1>
-                        <p class="lead text-capitalize">We’re full service which means we’ve got you covered on design
-                            and content right
-                            through to
-                            digital. You’ll form a
-                            lasting relationship with us.</p>
-                    </div>
-                </div>
-
+        <div class="row">
+          <div class="col text-center mx-auto">
+            <div class="titles">
+              <h5 class="text-uppercase text-muted">What We Do?</h5>
+              <h1 class="text-uppercase mb-3 fw-bold">Our Services</h1>
+              <p class="lead text-capitalize">
+                We’re full service which means we’ve got you covered on design
+                and content right through to digital. You’ll form a lasting
+                relationship with us.
+              </p>
             </div>
-
-            <!-- end title -->
-
-            <div class="row mb-5">
-
-                <div class="col-lg-4 col-md-12 col-sm-12 my-5 mb-3">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <div class="mb-3">
-                                <i class="icofont-vehicle-wrecking fa-5x mb-5 icons"></i>
-                            </div>
-                            <div class="mb-3">
-                                <h5 class="fw-bold text-uppercase">DESIGN RENOVATION</h5>
-                            </div>
-                            <div class="mb-3">
-                                <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem
-                                    Ipsum
-                                    has been the industry's</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-12 col-sm-12 my-5 mb-3">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <div class="mb-3">
-                                <i class="icofont-architecture-alt fa-5x icons"></i>
-                            </div>
-                            <div class="mb-3">
-                                <h5 class="fw-bold text-uppercase">DESIGN RENOVATION</h5>
-                            </div>
-                            <div class="mb-3">
-                                <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem
-                                    Ipsum
-                                    has been the industry's</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-12 col-sm-12 my-5 mb-3">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <div class="mb-3">
-                                <i class="icofont-energy-oil fa-5x icons"></i>
-                            </div>
-                            <div class="mb-3">
-                                <h5 class="fw-bold text-uppercase">DESIGN RENOVATION</h5>
-                            </div>
-                            <div class="mb-3">
-                                <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem
-                                    Ipsum
-                                    has been the industry's</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-            <div class="row">
-
-                <div class="col-lg-6 col-md-12 col-12">
-                    <h3 class="fw-bold text-center text-uppercase my-5 ">WHY CHOOSE US ?</h3>
-                    <div class="row">
-                        <div class="d-flex justify-content-between mb-3">
-                            <div class="icons ">
-                                <i class="icofont-thumbs-up fa-3x"></i>
-                            </div>
-                            <div class="ms-5 paragraphs">
-                                <h5 class="fw-bold">Reliability</h5>
-                                <p class="lead paragraphs">Nulla metus metus ullamcorper vel tincidunt sed euismod nibh
-                                    Quisque
-                                    volutpat condimentum
-                                    velit class aptent taciti.</p>
-                            </div>
-                        </div>
-
-                        <div class="d-flex justify-content-between mb-3">
-                            <div class="icons ">
-                                <i class="icofont-engineer fa-3x"></i>
-                            </div>
-                            <div class="ms-5 paragraphs">
-                                <h5 class="fw-bold">Reliability</h5>
-                                <p class="lead paragraphs ">Nulla metus metus ullamcorper vel tincidunt sed euismod nibh
-                                    Quisque
-                                    volutpat condimentum
-                                    velit class aptent taciti.</p>
-                            </div>
-                        </div>
-
-                        <div class="d-flex justify-content-between mb-3">
-                            <div class="icons ">
-                                <i class="icofont-help-robot fa-3x"></i>
-                            </div>
-                            <div class="ms-5 paragraphs">
-                                <h5 class="fw-bold">Reliability</h5>
-                                <p class="lead paragraphs">Nulla metus metus ullamcorper vel tincidunt sed euismod nibh
-                                    Quisque
-                                    volutpat condimentum
-                                    velit class aptent taciti.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-md-12 col-12">
-                    <div class="mt-3">
-                        <img src="./assets/img/2.png" class="img-fluid" alt="img2">
-                    </div>
-                </div>
-
-            </div>
+          </div>
         </div>
 
+        <!-- end title -->
+
+        <div class="row mb-5">
+          <div class="col-lg-4 col-md-12 col-sm-12 my-5 mb-3">
+            <div class="card">
+              <div class="card-body text-center">
+                <div class="mb-3">
+                  <i class="icofont-vehicle-wrecking fa-5x mb-5 icons"></i>
+                </div>
+                <div class="mb-3">
+                  <h5 class="fw-bold text-uppercase">DESIGN RENOVATION</h5>
+                </div>
+                <div class="mb-3">
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and type
+                    setting industry. Lorem Ipsum has been the industry's
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-12 col-sm-12 my-5 mb-3">
+            <div class="card">
+              <div class="card-body text-center">
+                <div class="mb-3">
+                  <i class="icofont-architecture-alt fa-5x icons"></i>
+                </div>
+                <div class="mb-3">
+                  <h5 class="fw-bold text-uppercase">DESIGN RENOVATION</h5>
+                </div>
+                <div class="mb-3">
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and type
+                    setting industry. Lorem Ipsum has been the industry's
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-12 col-sm-12 my-5 mb-3">
+            <div class="card">
+              <div class="card-body text-center">
+                <div class="mb-3">
+                  <i class="icofont-energy-oil fa-5x icons"></i>
+                </div>
+                <div class="mb-3">
+                  <h5 class="fw-bold text-uppercase">DESIGN RENOVATION</h5>
+                </div>
+                <div class="mb-3">
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and type
+                    setting industry. Lorem Ipsum has been the industry's
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-12">
+            <h3 class="fw-bold text-center text-uppercase my-5">
+              WHY CHOOSE US ?
+            </h3>
+            <div class="row">
+              <div class="d-flex justify-content-between mb-3">
+                <div class="icons">
+                  <i class="icofont-thumbs-up fa-3x"></i>
+                </div>
+                <div class="ms-5 paragraphs">
+                  <h5 class="fw-bold">Reliability</h5>
+                  <p class="lead paragraphs">
+                    Nulla metus metus ullamcorper vel tincidunt sed euismod nibh
+                    Quisque volutpat condimentum velit class aptent taciti.
+                  </p>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-between mb-3">
+                <div class="icons">
+                  <i class="icofont-engineer fa-3x"></i>
+                </div>
+                <div class="ms-5 paragraphs">
+                  <h5 class="fw-bold">Reliability</h5>
+                  <p class="lead paragraphs">
+                    Nulla metus metus ullamcorper vel tincidunt sed euismod nibh
+                    Quisque volutpat condimentum velit class aptent taciti.
+                  </p>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-between mb-3">
+                <div class="icons">
+                  <i class="icofont-help-robot fa-3x"></i>
+                </div>
+                <div class="ms-5 paragraphs">
+                  <h5 class="fw-bold">Reliability</h5>
+                  <p class="lead paragraphs">
+                    Nulla metus metus ullamcorper vel tincidunt sed euismod nibh
+                    Quisque volutpat condimentum velit class aptent taciti.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-12 col-12">
+            <div class="mt-3">
+              <img src="./assets/img/2.png" class="img-fluid" alt="img2" />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- End Our Service Section -->
 
-
-
     <!-- Start Our Project Section -->
 
-    <section class="p-5  ourprojects">
+    <section class="p-5 ourprojects">
+      <div class="container-fluid">
+        <!-- start title -->
 
-        <div class="container-fluid">
-
-            <!-- start title -->
-
-            <div class="row ">
-                <div class="col text-center mx-auto">
-                    <div class="text-light titles">
-                        <h5 class="text-uppercase text-white">FEATURED WORK</h5>
-                        <h1 class="text-uppercase mb-3 fw-bold">OUR PROJECTS</h1>
-                        <p class="lead text-capitalize">We’re full service which means we’ve got you covered on design
-                            and content right through to digital. You’ll form a
-                            lasting relationship with us.</p>
-                    </div>
-                </div>
-
-
-
+        <div class="row">
+          <div class="col text-center mx-auto">
+            <div class="text-light titles">
+              <h5 class="text-uppercase text-white">FEATURED WORK</h5>
+              <h1 class="text-uppercase mb-3 fw-bold">OUR PROJECTS</h1>
+              <p class="lead text-capitalize">
+                We’re full service which means we’ve got you covered on design
+                and content right through to digital. You’ll form a lasting
+                relationship with us.
+              </p>
             </div>
-
-            <!-- end title -->
-
-            <div class="row text-center my-5">
-                <div class="col">
-                    <ul class="list-inline">
-                        <li class="list-inline-item  mx-md-5 mx-3 projectlists activeitems" data-filter="all">All
-                        </li>
-                        <li class="list-inline-item  mx-md-5 mx-3 projectlists" data-filter="brand">Brand</li>
-                        <li class="list-inline-item  mx-md-5 mx-3 projectlists" data-filter="design">Design</li>
-                        <li class="list-inline-item  mx-md-5 mx-3 projectlists" data-filter="graphic">Graphic</li>
-                    </ul>
-                </div>
-                <div class="container-fluid ">
-                    <div class=" my-3 ">
-
-                        <div class="d-flex flex-wrap  justify-content-center">
-                            <div class=" img-boxs filters all ">
-                                <div class="imgicons">
-                                    <a href="./assets/img/portfolio/1.jpg" data-lightbox="imgs" class="">
-                                        <i class="icofont-arrow-right"></i>
-                                    </a>
-                                </div>
-                                <img src="./assets/img/portfolio/1.jpg" width="250px" alt="">
-                                <div class="captions">
-                                    <h5>Building</h5>
-                                    <p>Work Description</p>
-                                </div>
-                            </div>
-                            <div class="img-boxs filters all ">
-                                <div class="imgicons">
-                                    <a href="./assets/img/portfolio/2.jpg" data-lightbox="imgs" class="">
-                                        <i class="icofont-arrow-right"></i>
-                                    </a>
-                                </div>
-                                <img src="./assets/img/portfolio/2.jpg" width="250px" alt="">
-                                <div class="captions">
-                                    <h5>Building</h5>
-                                    <p>Work Description</p>
-                                </div>
-                            </div>
-                            <div class="img-boxs filters all ">
-                                <div class="imgicons">
-                                    <a href="./assets/img/portfolio/3.jpg" data-lightbox="imgs" class="">
-                                        <i class="icofont-arrow-right"></i>
-                                    </a>
-                                </div>
-                                <img src="./assets/img/portfolio/3.jpg" width="250px" alt="">
-                                <div class="captions">
-                                    <h5>Building</h5>
-                                    <p>Work Description</p>
-                                </div>
-                            </div>
-                            <div class="img-boxs filters brand ">
-                                <div class="imgicons">
-                                    <a href="./assets/img/portfolio/4.jpg" data-lightbox="imgs" class="">
-                                        <i class="icofont-arrow-right"></i>
-                                    </a>
-                                </div>
-                                <img src="./assets/img/portfolio/4.jpg" width="250px" alt="">
-                                <div class="captions">
-                                    <h5>Building</h5>
-                                    <p>Work Description</p>
-                                </div>
-                            </div>
-                            <div class="img-boxs filters brand ">
-                                <div class="imgicons">
-                                    <a href="./assets/img/portfolio/5.jpg" data-lightbox="imgs" class="">
-                                        <i class="icofont-arrow-right"></i>
-                                    </a>
-                                </div>
-                                <img src="./assets/img/portfolio/5.jpg" width="250px" alt="">
-                                <div class="captions">
-                                    <h5>Building</h5>
-                                    <p>Work Description</p>
-                                </div>
-                            </div>
-                            <div class="img-boxs filters design ">
-                                <div class="imgicons">
-                                    <a href="./assets/img/portfolio/6.jpg" data-lightbox="imgs" class="">
-                                        <i class="icofont-arrow-right"></i>
-                                    </a>
-                                </div>
-                                <img src="./assets/img/portfolio/6.jpg" width="250px" alt="">
-                                <div class="captions">
-                                    <h5>Building</h5>
-                                    <p>Work Description</p>
-                                </div>
-                            </div>
-                            <div class="img-boxs filters graphic ">
-                                <div class="imgicons">
-                                    <a href="./assets/img/portfolio/7.jpg" data-lightbox="imgs" class="">
-                                        <i class="icofont-arrow-right"></i>
-                                    </a>
-                                </div>
-                                <img src="./assets/img/portfolio/7.jpg" width="250px" alt="">
-                                <div class="captions">
-                                    <h5>Building</h5>
-                                    <p>Work Description</p>
-                                </div>
-                            </div>
-                            <div class="img-boxs filters brand ">
-                                <div class="imgicons">
-                                    <a href="./assets/img/portfolio/8.jpg" data-lightbox="imgs" class="">
-                                        <i class="icofont-arrow-right"></i>
-                                    </a>
-                                </div>
-                                <img src="./assets/img/portfolio/8.jpg" width="250px" alt="">
-                                <div class="captions">
-                                    <h5>Building</h5>
-                                    <p>Work Description</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-
+          </div>
         </div>
 
+        <!-- end title -->
+
+        <div class="row text-center my-5">
+          <div class="col">
+            <ul class="list-inline">
+              <li
+                class="list-inline-item mx-md-5 mx-3 projectlists activeitems"
+                data-filter="all">
+                All
+              </li>
+              <li
+                class="list-inline-item mx-md-5 mx-3 projectlists"
+                data-filter="brand">
+                Brand
+              </li>
+              <li
+                class="list-inline-item mx-md-5 mx-3 projectlists"
+                data-filter="design">
+                Design
+              </li>
+              <li
+                class="list-inline-item mx-md-5 mx-3 projectlists"
+                data-filter="graphic">
+                Graphic
+              </li>
+            </ul>
+          </div>
+          <div class="container-fluid">
+            <div class="my-3">
+              <div class="d-flex flex-wrap justify-content-center">
+                <div class="img-boxs filters all">
+                  <div class="imgicons">
+                    <a
+                      href="./assets/img/portfolio/1.jpg"
+                      data-lightbox="imgs"
+                      class="">
+                      <i class="icofont-arrow-right"></i>
+                    </a>
+                  </div>
+                  <img
+                    src="./assets/img/portfolio/1.jpg"
+                    width="250px"
+                    alt="" />
+                  <div class="captions">
+                    <h5>Building</h5>
+                    <p>Work Description</p>
+                  </div>
+                </div>
+                <div class="img-boxs filters all">
+                  <div class="imgicons">
+                    <a
+                      href="./assets/img/portfolio/2.jpg"
+                      data-lightbox="imgs"
+                      class="">
+                      <i class="icofont-arrow-right"></i>
+                    </a>
+                  </div>
+                  <img
+                    src="./assets/img/portfolio/2.jpg"
+                    width="250px"
+                    alt="" />
+                  <div class="captions">
+                    <h5>Building</h5>
+                    <p>Work Description</p>
+                  </div>
+                </div>
+                <div class="img-boxs filters all">
+                  <div class="imgicons">
+                    <a
+                      href="./assets/img/portfolio/3.jpg"
+                      data-lightbox="imgs"
+                      class="">
+                      <i class="icofont-arrow-right"></i>
+                    </a>
+                  </div>
+                  <img
+                    src="./assets/img/portfolio/3.jpg"
+                    width="250px"
+                    alt="" />
+                  <div class="captions">
+                    <h5>Building</h5>
+                    <p>Work Description</p>
+                  </div>
+                </div>
+                <div class="img-boxs filters brand">
+                  <div class="imgicons">
+                    <a
+                      href="./assets/img/portfolio/4.jpg"
+                      data-lightbox="imgs"
+                      class="">
+                      <i class="icofont-arrow-right"></i>
+                    </a>
+                  </div>
+                  <img
+                    src="./assets/img/portfolio/4.jpg"
+                    width="250px"
+                    alt="" />
+                  <div class="captions">
+                    <h5>Building</h5>
+                    <p>Work Description</p>
+                  </div>
+                </div>
+                <div class="img-boxs filters brand">
+                  <div class="imgicons">
+                    <a
+                      href="./assets/img/portfolio/5.jpg"
+                      data-lightbox="imgs"
+                      class="">
+                      <i class="icofont-arrow-right"></i>
+                    </a>
+                  </div>
+                  <img
+                    src="./assets/img/portfolio/5.jpg"
+                    width="250px"
+                    alt="" />
+                  <div class="captions">
+                    <h5>Building</h5>
+                    <p>Work Description</p>
+                  </div>
+                </div>
+                <div class="img-boxs filters design">
+                  <div class="imgicons">
+                    <a
+                      href="./assets/img/portfolio/6.jpg"
+                      data-lightbox="imgs"
+                      class="">
+                      <i class="icofont-arrow-right"></i>
+                    </a>
+                  </div>
+                  <img
+                    src="./assets/img/portfolio/6.jpg"
+                    width="250px"
+                    alt="" />
+                  <div class="captions">
+                    <h5>Building</h5>
+                    <p>Work Description</p>
+                  </div>
+                </div>
+                <div class="img-boxs filters graphic">
+                  <div class="imgicons">
+                    <a
+                      href="./assets/img/portfolio/7.jpg"
+                      data-lightbox="imgs"
+                      class="">
+                      <i class="icofont-arrow-right"></i>
+                    </a>
+                  </div>
+                  <img
+                    src="./assets/img/portfolio/7.jpg"
+                    width="250px"
+                    alt="" />
+                  <div class="captions">
+                    <h5>Building</h5>
+                    <p>Work Description</p>
+                  </div>
+                </div>
+                <div class="img-boxs filters brand">
+                  <div class="imgicons">
+                    <a
+                      href="./assets/img/portfolio/8.jpg"
+                      data-lightbox="imgs"
+                      class="">
+                      <i class="icofont-arrow-right"></i>
+                    </a>
+                  </div>
+                  <img
+                    src="./assets/img/portfolio/8.jpg"
+                    width="250px"
+                    alt="" />
+                  <div class="captions">
+                    <h5>Building</h5>
+                    <p>Work Description</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- End Our Project Section -->
 
-
-
     <!-- Start Our Features Section -->
 
-    <section class="  bg-white p-5">
-        <div class="container">
-
-            <!-- start title -->
-            <div class="row ">
-                <div class="col text-center mx-auto">
-                    <div class="text-dark titles">
-                        <h5 class="text-uppercase text-black-50">What We Do?</h5>
-                        <h1 class="text-uppercase mb-3 fw-bold">Our Features</h1>
-                        <p class="lead text-capitalize">We’re full service which means we’ve got you covered on design
-                            and content right through to digital. You’ll form a
-                            lasting relationship with us.</p>
-                    </div>
-                </div>
-
-
-
+    <section class="p-5 ourfeatures">
+      <div class="container">
+        <!-- start title -->
+        <div class="row">
+          <div class="col text-center mx-auto">
+            <div class="text-dark titles">
+              <h5 class="text-uppercase text-black-50">What We Do?</h5>
+              <h1 class="text-uppercase mb-3 fw-bold">Our Features</h1>
+              <p class="lead text-capitalize">
+                We’re full service which means we’ve got you covered on design
+                and content right through to digital. You’ll form a lasting
+                relationship with us.
+              </p>
             </div>
-            <!-- end title -->
-
+          </div>
         </div>
+        <!-- end title -->
+      </div>
 
+      <div class="container my-5">
         <div class="container">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-12 col-sm-12 my-5">
-                        <div class="card">
-                            <div class="ourfeaturesimgs">
-                                <img src="./assets/img/services/1.jpg" class="img-fluid" width="100%" ;height="100%" ;
-                                    alt="">
-                            </div>
-                            <div class="card-body">
-                                <div class="fa-3x icons">
-                                    <i class="icofont-paint-brush"></i>
-                                </div>
-                                <div class="headings">
-                                    <h5 class="fw-bold my-3">Design Renovation</h5>
-                                    <p class="lead">Lorem Ipsum is simply dummy text of the printing and type setting
-                                        industry. Lorem
-                                        Ipsum has been the industry's</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-12 col-sm-12 my-5">
-                        <div class="card">
-                            <div class="ourfeaturesimgs">
-                                <img src="./assets/img/services/2.jpg" class="img-fluid" width="100%" ;height="100%" ;
-                                    alt="">
-                            </div>
-                            <div class="card-body">
-                                <div class="fa-3x icons">
-                                    <i class="icofont-architecture-alt"></i>
-                                </div>
-                                <div class="headings">
-                                    <h5 class="fw-bold my-3">Design And Build</h5>
-                                    <p class="lead">Lorem Ipsum is simply dummy text of the printing and type setting
-                                        industry. Lorem
-                                        Ipsum has been the industry's</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-4 col-md-12 col-sm-12 my-5">
-                        <div class="card">
-                            <div class="ourfeaturesimgs">
-                                <img src="./assets/img/services/3.jpg" class="img-fluid" width="100%" ;height="100%" ;
-                                    alt="">
-                            </div>
-                            <div class="card-body">
-                                <div class="fa-3x icons">
-                                    <i class="icofont-energy-oil"></i>
-                                </div>
-                                <div class="headings">
-                                    <h5 class="fw-bold my-3">Business Strategy</h5>
-                                    <p class="lead">Lorem Ipsum is simply dummy text of the printing and type setting
-                                        industry. Lorem
-                                        Ipsum has been the industry's</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12 my-5">
+              <div class="card shadow">
+                <div class="ourfeaturesimgs">
+                  <img
+                    src="./assets/img/services/1.jpg"
+                    class="img-fluid"
+                    width="100%"
+                    ;height="100%"
+                    ;
+                    alt="" />
                 </div>
+                <div class="card-body bg-white">
+                  <div class="fa-3x icons">
+                    <i class="icofont-paint-brush"></i>
+                  </div>
+                  <div class="headings">
+                    <h5 class="fw-bold my-3">Design Renovation</h5>
+                    <p class="lead">
+                      Lorem Ipsum is simply dummy text of the printing and type
+                      setting industry. Lorem Ipsum has been the industry's
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-12 my-5">
+              <div class="card shadow">
+                <div class="ourfeaturesimgs">
+                  <img
+                    src="./assets/img/services/2.jpg"
+                    class="img-fluid"
+                    width="100%"
+                    ;height="100%"
+                    ;
+                    alt="" />
+                </div>
+                <div class="card-body">
+                  <div class="fa-3x icons">
+                    <i class="icofont-architecture-alt"></i>
+                  </div>
+                  <div class="headings">
+                    <h5 class="fw-bold my-3">Design And Build</h5>
+                    <p class="lead">
+                      Lorem Ipsum is simply dummy text of the printing and type
+                      setting industry. Lorem Ipsum has been the industry's
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-12 my-5">
+              <div class="card shadow">
+                <div class="ourfeaturesimgs">
+                  <img
+                    src="./assets/img/services/3.jpg"
+                    class="img-fluid"
+                    width="100%"
+                    ;height="100%"
+                    ;
+                    alt="" />
+                </div>
+                <div class="card-body">
+                  <div class="fa-3x icons">
+                    <i class="icofont-energy-oil"></i>
+                  </div>
+                  <div class="headings">
+                    <h5 class="fw-bold my-3">Business Strategy</h5>
+                    <p class="lead">
+                      Lorem Ipsum is simply dummy text of the printing and type
+                      setting industry. Lorem Ipsum has been the industry's
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-
+      </div>
     </section>
 
-
     <!-- End Our Features Section -->
-
-
 
     <!-- Start Services Section -->
 
     <section class="text-center p-5 services">
-        <div class="container">
-            <div class="row">
-                <div id="carousels" class="carousel side" data-bs-ride="carousel">
-                    <ol class="carousel-indicators  carouselsbtns">
-                        <li data-bs-target="#carousels" data-bs-slide-to="0" class="  bg-warning active"></li>
-                        <li data-bs-target="#carousels" class="  bg-warning " data-bs-slide-to="1"></li>
-                        <li data-bs-target="#carousels" class=" bg-warning " data-bs-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item col-md-8 mx-auto my-5 active ">
-                            <div class="text-light">
-                                <div class="d-flex justify-content-center align-items-center mb-3">
-                                    <img src="./assets/img/left-quote.svg" width="50px" alt="left-quote" />
-                                    <h6 class=" mt-5 pt-4 mx-4 fw-bold"> ALEX SMITH <br /> <br /> <span
-                                            class="small text-warning"> Envato
-                                            Customer </span> </h6>
-                                    <img src="./assets/img/right-quote.svg" width="50px" alt="right-quote">
-                                </div>
-                                <p class="text-white-50 texts">Nulla metus metus ullamcorper vel tincidunt sed euismod
-                                    nibh
-                                    Quisque
-                                    volutpat condimentum
-                                    velit class aptent taciti
-                                    sociosqu ad litora torquent per conubia nostra.</p>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item col-md-8 mx-auto my-5 ">
-                            <div class="text-light">
-                                <div class="d-flex justify-content-center align-items-center mb-3">
-                                    <img src="./assets/img/left-quote.svg" width="50px" alt="left-quote" />
-                                    <h6 class=" mt-5 pt-4 mx-4 fw-bold"> SAM SMITH <br /> <br /> <span
-                                            class="small text-warning"> Envato
-                                            Customer </span> </h6>
-                                    <img src="./assets/img/right-quote.svg" width="50px" alt="right-quote">
-                                </div>
-                                <p class="text-white-50 texts">Nulla metus metus ullamcorper vel tincidunt sed euismod
-                                    nibh
-                                    Quisque
-                                    volutpat condimentum
-                                    velit class aptent taciti
-                                    sociosqu ad litora torquent per conubia nostra.</p>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item col-md-8 mx-auto my-5 ">
-                            <div class="text-light">
-                                <div class="d-flex justify-content-center align-items-center mb-3">
-                                    <img src="./assets/img/left-quote.svg" width="50px" alt="left-quote" />
-                                    <h6 class=" mt-5 pt-4 mx-4 fw-bold"> ALEX MARTIN <br /> <br /> <span
-                                            class="small text-warning"> Envato
-                                            Customer </span> </h6>
-                                    <img src="./assets/img/right-quote.svg" width="50px" alt="right-quote">
-                                </div>
-                                <p class="text-white-50 texts">Nulla metus metus ullamcorper vel tincidunt sed euismod
-                                    nibh
-                                    Quisque
-                                    volutpat condimentum
-                                    velit class aptent taciti
-                                    sociosqu ad litora torquent per conubia nostra.</p>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container">
+        <div class="row">
+          <div id="carousels" class="carousel side" data-bs-ride="carousel">
+            <ol class="carousel-indicators carouselsbtns">
+              <li
+                data-bs-target="#carousels"
+                data-bs-slide-to="0"
+                class="bg-warning active"></li>
+              <li
+                data-bs-target="#carousels"
+                class="bg-warning"
+                data-bs-slide-to="1"></li>
+              <li
+                data-bs-target="#carousels"
+                class="bg-warning"
+                data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item col-md-8 mx-auto my-5 active">
+                <div class="text-light">
+                  <div
+                    class="d-flex justify-content-center align-items-center mb-3">
+                    <img
+                      src="./assets/img/left-quote.svg"
+                      width="50px"
+                      alt="left-quote" />
+                    <h6 class="mt-5 pt-4 mx-4 fw-bold">
+                      <img
+                        src="./assets/img/clients/user1.jpg"
+                        class="rounded-circle d-block"
+                        alt="clients1" />
+                      ALEX SMITH <br />
+                      <br />
+                      <span class="small text-warning"> Envato Customer </span>
+                    </h6>
+                    <img
+                      src="./assets/img/right-quote.svg"
+                      width="50px"
+                      alt="right-quote" />
+                  </div>
+                  <p class="text-white-50 texts">
+                    Nulla metus metus ullamcorper vel tincidunt sed euismod nibh
+                    Quisque volutpat condimentum velit class aptent taciti
+                    sociosqu ad litora torquent per conubia nostra.
+                  </p>
                 </div>
+              </div>
+
+              <div class="carousel-item col-md-8 mx-auto my-5">
+                <div class="text-light">
+                  <div
+                    class="d-flex justify-content-center align-items-center mb-3">
+                    <img
+                      src="./assets/img/left-quote.svg"
+                      width="50px"
+                      alt="left-quote" />
+                    <h6 class="mt-5 pt-4 mx-4 fw-bold">
+                      <img
+                        src="./assets/img/clients/user2.jpg"
+                        class="rounded-circle d-block"
+                        alt="clients2" />
+                      SAM SMITH <br />
+                      <br />
+                      <span class="small text-warning"> Envato Customer </span>
+                    </h6>
+                    <img
+                      src="./assets/img/right-quote.svg"
+                      width="50px"
+                      alt="right-quote" />
+                  </div>
+                  <p class="text-white-50 texts">
+                    Nulla metus metus ullamcorper vel tincidunt sed euismod nibh
+                    Quisque volutpat condimentum velit class aptent taciti
+                    sociosqu ad litora torquent per conubia nostra.
+                  </p>
+                </div>
+              </div>
+
+              <div class="carousel-item col-md-8 mx-auto my-5">
+                <div class="text-light">
+                  <div
+                    class="d-flex justify-content-center align-items-center mb-3">
+                    <img
+                      src="./assets/img/left-quote.svg"
+                      width="50px"
+                      alt="left-quote" />
+                    <h6 class="mt-5 pt-4 mx-4 fw-bold">
+                      <img
+                        src="./assets/img/clients/user3.jpg"
+                        class="rounded-circle d-block"
+                        alt="clients3" />
+                      ALEX MARTIN <br />
+                      <br />
+                      <span class="small text-warning"> Envato Customer </span>
+                    </h6>
+                    <img
+                      src="./assets/img/right-quote.svg"
+                      width="50px"
+                      alt="right-quote" />
+                  </div>
+                  <p class="text-white-50 texts">
+                    Nulla metus metus ullamcorper vel tincidunt sed euismod nibh
+                    Quisque volutpat condimentum velit class aptent taciti
+                    sociosqu ad litora torquent per conubia nostra.
+                  </p>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
-
-
     <!-- End Services Section -->
-
-
-
-
-
-
-
-
 
     <!-- Start Contact Us Section -->
 
     <section class="p-5 contacts">
-        <div class="container">
-            <!-- start title -->
-            <div class="row ">
-                <div class="col text-center mx-auto mb-5">
-                    <div class="text-dark titles">
-                        <h5 class="text-uppercase text-black-50">GET IN TOUCH</h5>
-                        <h1 class="text-uppercase mb-3 fw-bold">CONTACT US</h1>
-                        <p class="lead text-capitalize">We’re full service which means we’ve got you covered on design
-                            and content right through to digital. You’ll form a
-                            lasting relationship with us.</p>
-                    </div>
-                </div>
-
-
-
+      <div class="container">
+        <!-- start title -->
+        <div class="row">
+          <div class="col text-center mx-auto mb-5">
+            <div class="text-dark titles">
+              <h5 class="text-uppercase text-black-50">GET IN TOUCH</h5>
+              <h1 class="text-uppercase mb-3 fw-bold">CONTACT US</h1>
+              <p class="lead text-capitalize">
+                We’re full service which means we’ve got you covered on design
+                and content right through to digital. You’ll form a lasting
+                relationship with us.
+              </p>
             </div>
-            <!-- end title -->
-
-            <div class="container-fluid">
-                <div class="row justify-content-around">
-                    <div class="col-lg-6 col-md-12 col-sm-12">
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control bg-gradient border-0 p-3 my-2  "
-                                        placeholder="Name">
-                                </div>
-
-                            </div>
-
-                            <div class="col-6">
-                                <div class="form-group">
-                                    <input type="email" class="form-control bg-gradient border-0 p-3 my-2  "
-                                        placeholder="Email">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control bg-gradient border-0 p-3 my-2  "
-                                        placeholder="Phone">
-                                </div>
-                            </div>
-                            <div class="col-md-6 ">
-                                <div class="form-group">
-                                    <input type="email" class="form-control bg-gradient border-0 p-3 my-2  "
-                                        placeholder="Subject">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <textarea class="form-control px-2 py-2" rows="4" placeholder="Message"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <button type="button" class="btn btn-md bg-warning rounded-0 my-3 btns">Send Message</button>
-                    </div>
-
-                    <div class="col-lg-6 col-md-12 col-sm-12">
-                        <div class="p-2 border-bottom">
-                            <h5 class="fw-bold text-uppercase mb-4">New York</h5>
-                            <div class="d-flex justify-content-around ">
-                                <p>2653 Filbert Street, Pennsylvania, Northampton</p>
-                                <p>10-787-1777 / 570-350-3188
-
-                                    Support_Info@Email.Com</p>
-                            </div>
-                        </div>
-
-                        <div class="p-2">
-                            <h5 class="fw-bold text-uppercase mt-4 mb-4">Hong Kong</h5>
-                            <div class="d-flex justify-content-around ">
-                                <p>2653 Filbert Street, Pennsylvania, Northampton</p>
-                                <p>10-787-1777 / 570-350-3188
-
-                                    Support_Info@Email.Com</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-
-            </div>
-
+          </div>
         </div>
+        <!-- end title -->
+
+        <div class="container-fluid">
+          <div class="row justify-content-around">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div class="row">
+                <div class="col-6">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control bg-gradient border-0 p-3 my-2"
+                      placeholder="Name" />
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control bg-gradient border-0 p-3 my-2"
+                      placeholder="Email" />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control bg-gradient border-0 p-3 my-2"
+                      placeholder="Phone" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control bg-gradient border-0 p-3 my-2"
+                      placeholder="Subject" />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group">
+                    <textarea
+                      class="form-control px-2 py-2"
+                      rows="4"
+                      placeholder="Message"></textarea>
+                  </div>
+                </div>
+              </div>
+              <button
+                type="button"
+                class="btn btn-md bg-warning rounded-0 my-3 btns">
+                Send Message
+              </button>
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div class="p-2 border-bottom">
+                <h5 class="fw-bold text-uppercase mb-4">New York</h5>
+                <div class="d-flex justify-content-around">
+                  <p>2653 Filbert Street, Pennsylvania, Northampton</p>
+                  <p>10-787-1777 / 570-350-3188 Support_Info@Email.Com</p>
+                </div>
+              </div>
+
+              <div class="p-2">
+                <h5 class="fw-bold text-uppercase mt-4 mb-4">Hong Kong</h5>
+                <div class="d-flex justify-content-around">
+                  <p>2653 Filbert Street, Pennsylvania, Northampton</p>
+                  <p>10-787-1777 / 570-350-3188 Support_Info@Email.Com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-
-
 
     <!-- End Contact Us Section -->
 
-
-
-
-
-
     <!-- Start Member Section -->
 
-    <section class="p-5 bg-muted members">
+    <section class="p-5 members">
+      <div class="container">
+        <div class="row">
+          <div class="text-center titles">
+            <h5 class="text-uppercase text-muted">MEET OUR EXPERT</h5>
+            <h1 class="text-uppercase mb-3 fw-bold">TEAM MEMBER</h1>
+            <p class="lead text-capitalize">
+              We’re full service which means we’ve got you covered on design and
+              content right through to digital. You’ll form a lasting
+              relationship with us.
+            </p>
+          </div>
 
-        <div class="container">
-            <div class="row">
-                <div class="text-center titles">
-                    <h5 class="text-uppercase text-muted">MEET OUR EXPERT</h5>
-                    <h1 class="text-uppercase mb-3 fw-bold">TEAM MEMBER</h1>
-                    <p class="lead text-capitalize">We’re full service which means we’ve got you covered on design and
-
-                        content right through to digital. You’ll form a lasting relationship with us.</p>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-3 col-md-5 col-sm-10 py-5 mx-auto">
-                        <div class="card">
-                            <img class="" src="./assets/img/team/1.jpg" width="250px" alt="team1">
-                            <div class="card-infos text-center">
-                                <div class="cardtexts">
-                                    <h5>Alex Smith</h5>
-                                    <p>Managing Director</p>
-                                    <div class="infoicons">
-                                        <a href="#"><i class="fas-fa-facebook"></i></a>
-                                        <a href="#"><i class="fas-fa-twitter"></i></a>
-                                        <a href="#"><i class="fas-fa-instagram"></i></a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-5 col-sm-10 py-5 mx-auto">
+              <div class="card">
+                <img
+                  class=""
+                  src="./assets/img/team/1.jpg"
+                  width="250px"
+                  alt="team1" />
+                <div class="card-infos text-center">
+                  <div class="cardtexts">
+                    <h5>Alex Smith</h5>
+                    <p>Managing Director</p>
+                    <div class="infoicons">
+                      <a href="#" class="text-decoration-none p-2"
+                        ><i class="icofont-facebook fa-1x text-white"></i
+                      ></a>
+                      <a href="#" class="text-decoration-none p-2"
+                        ><i class="icofont-twitter fa-1x text-white"></i
+                      ></a>
+                      <a href="#" class="text-decoration-none p-2"
+                        ><i class="icofont-instagram fa-1x text-white"></i
+                      ></a>
                     </div>
-
-
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
 
+            <div class="col-lg-3 col-md-5 col-sm-10 py-5 mx-auto">
+              <div class="card">
+                <img
+                  class=""
+                  src="./assets/img/team/2.jpg"
+                  width="250px"
+                  alt="team1" />
+                <div class="card-infos text-center">
+                  <div class="cardtexts">
+                    <h5>Alex Smith</h5>
+                    <p>Marketing Manager</p>
+                    <div class="infoicons">
+                      <a href="#" class="text-decoration-none p-2"
+                        ><i class="icofont-facebook fa-1x text-white"></i
+                      ></a>
+                      <a href="#" class="text-decoration-none p-2"
+                        ><i class="icofont-twitter fa-1x text-white"></i
+                      ></a>
+                      <a href="#" class="text-decoration-none p-2"
+                        ><i class="icofont-instagram fa-1x text-white"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-5 col-sm-10 py-5 mx-auto">
+              <div class="card">
+                <img
+                  class=""
+                  src="./assets/img/team/3.jpg"
+                  width="250px"
+                  alt="team1" />
+                <div class="card-infos text-center">
+                  <div class="cardtexts">
+                    <h5>Alex Smith</h5>
+                    <p>UI/UX Designer</p>
+                    <div class="infoicons">
+                      <a href="#" class="text-decoration-none p-2"
+                        ><i class="icofont-facebook fa-1x text-white"></i
+                      ></a>
+                      <a href="#" class="text-decoration-none p-2"
+                        ><i class="icofont-twitter fa-1x text-white"></i
+                      ></a>
+                      <a href="#" class="text-decoration-none p-2"
+                        ><i class="icofont-instagram fa-1x text-white"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-5 col-sm-10 py-5 mx-auto">
+              <div class="card">
+                <img
+                  class=""
+                  src="./assets/img/team/4.jpg"
+                  width="250px"
+                  alt="team1" />
+                <div class="card-infos text-center">
+                  <div class="cardtexts">
+                    <h5>Alex Smith</h5>
+                    <p>Developer</p>
+                    <div class="infoicons">
+                      <a href="#" class="text-decoration-none p-2"
+                        ><i class="icofont-facebook fa-1x text-white"></i
+                      ></a>
+                      <a href="#" class="text-decoration-none p-2"
+                        ><i class="icofont-twitter fa-1x text-white"></i
+                      ></a>
+                      <a href="#" class="text-decoration-none p-2"
+                        ><i class="icofont-instagram fa-1x text-white"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- End Member Section -->
 
+    <!-- Start Our Blog Section -->
 
+    <section class="p-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="text-dark titles">
+              <h5 class="text-uppercase text-black-50">Latest News</h5>
+              <h1 class="text-uppercase mb-3 fw-bold">Our Blog</h1>
+              <p class="lead text-capitalize">
+                We’re full service which means we’ve got you covered on design
+                and content right through to digital. You’ll form a lasting
+                relationship with us.
+              </p>
+            </div>
+          </div>
+        </div>
 
+        <div class="row">
+          <div class="col-lg-4 col-md-12 col-sm-12 my-5 pointer">
+            <div class="card shadow blogcards">
+              <div class="blogimgcontainer">
+                <img
+                  src="./assets/img/blog/1.jpg"
+                  class="img-fluid blogimgs"
+                  width="100%"
+                  ;height="100%"
+                  ;
+                  alt="" />
+              </div>
+              <div class="card-body px-4 cardbodys">
+                <div class="my-3">
+                  <p class="small fw-bold text-warning">After Effect</p>
+                </div>
+                <div class="headings">
+                  <h4 class="fw-bold my-3" style="font-size: 1.24rem">
+                    Top 10 Advertisement Templates for After Effects.
+                  </h4>
+                  <p class="lead fw-bold" style="text-align: end">
+                    06 august 2018
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <div class="col-lg-4 col-md-12 col-sm-12 my-5">
+            <div class="card shadow blogcards">
+              <div class="blogimgcontainer">
+                <img
+                  src="./assets/img/blog/2.jpg"
+                  class="img-fluid blogimgs"
+                  width="100%"
+                  ;height="100%"
+                  ;
+                  alt="" />
+              </div>
+              <div class="card-body px-4 cardbodys">
+                <div class="my-3">
+                  <p class="small fw-bold text-warning">WordPress</p>
+                </div>
+                <div class="headings">
+                  <h4 class="fw-bold my-3" style="font-size: 1.24rem">
+                    How Ubiquity Became a Liability for Burberry.
+                  </h4>
+                  <p class="lead fw-bold" style="text-align: end">
+                    06 august 2018
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <div class="col-lg-4 col-md-12 col-sm-12 my-5">
+            <div class="card shadow blogcards">
+              <div class="blogimgcontainer">
+                <img
+                  src="./assets/img/blog/3.jpg"
+                  class="img-fluid blogimgs"
+                  width="100%"
+                  ;height="100%"
+                  ;
+                  alt="" />
+              </div>
+              <div class="card-body px-4 cardbodys">
+                <div class="my-3">
+                  <p class="small fw-bold text-warning">Video</p>
+                </div>
+                <div class="headings">
+                  <h4 class="fw-bold my-3" style="font-size: 1.24rem">
+                    Top 10 Infographic Video Templates for After Effects.
+                  </h4>
+                  <p class="lead fw-bold" style="text-align: end">
+                    06 august 2018
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- End Our Blog Section -->
 
+    <!-- Start Map Section -->
 
+    <section class="maps">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 w-100">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.0246582173295!2d96.12664027421391!3d16.849645418075493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c194eb70b00001%3A0xb2a1f5694971b1b6!2sMICT%20Park%20Main%20Building!5e1!3m2!1sen!2smm!4v1693993945158!5m2!1sen!2smm"
+              width=""
+              height=""
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- End Map Section -->
 
+    <!-- Start Client Section -->
 
+    <section class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div
+            id="carouselclients"
+            class="carousel side"
+            data-bs-ride="carousel">
+            <!-- <ol class="carousel-indicators carouselsbtns">
+                <li
+                  data-bs-target="#carouselclients"
+                  data-bs-slide-to="0"
+                  class="bg-warning active"></li>
+                <li
+                  data-bs-target="#carouselclients"
+                  class="bg-warning"
+                  data-bs-slide-to="1"></li>
+                <li
+                  data-bs-target="#carouselclients"
+                  class="bg-warning"
+                  data-bs-slide-to="2"></li>
+              </ol> -->
+            <div class="carousel-inner d-flex justify-content-around">
+              <div class="carousel-item mx-auto my-5 active">
+                <div class="text-light">
+                  <div class="">
+                    <img
+                      src="./assets/img/clients-logo/1.png"
+                      class="clientsimgs"
+                      alt="" />
+                  </div>
+                </div>
+              </div>
 
+              <div class="carousel-item mx-auto my-5 active">
+                <div class="text-light">
+                  <div class="">
+                    <img
+                      src="./assets/img/clients-logo/2.png"
+                      class="clientsimgs"
+                      alt="" />
+                  </div>
+                </div>
+              </div>
 
+              <div class="carousel-item mx-auto my-5 active">
+                <div class="text-light">
+                  <div class="">
+                    <img
+                      src="./assets/img/clients-logo/3.png"
+                      class="clientsimgs"
+                      alt="" />
+                  </div>
+                </div>
+              </div>
 
+              <div class="carousel-item mx-auto my-5 active">
+                <div class="text-light">
+                  <div class="">
+                    <img
+                      src="./assets/img/clients-logo/4.png"
+                      class="clientsimgs"
+                      alt="" />
+                  </div>
+                </div>
+              </div>
 
+              <div class="carousel-item mx-auto my-5 active">
+                <div class="text-light">
+                  <div class="">
+                    <img
+                      src="./assets/img/clients-logo/5.png"
+                      class="clientsimgs"
+                      alt="" />
+                  </div>
+                </div>
+              </div>
 
+              <div class="carousel-item mx-auto my-5 active">
+                <div class="text-light">
+                  <div class="">
+                    <img
+                      src="./assets/img/clients-logo/6.png"
+                      class="clientsimgs"
+                      alt="" />
+                  </div>
+                </div>
+              </div>
 
+              <div class="carousel-item mx-auto my-5 active">
+                <div class="text-light">
+                  <div class="">
+                    <img
+                      src="./assets/img/clients-logo/7.png"
+                      class="clientsimgs"
+                      alt="" />
+                  </div>
+                </div>
+              </div>
 
+              <div class="carousel-item mx-auto my-5 active">
+                <div class="text-light">
+                  <div class="">
+                    <img
+                      src="./assets/img/clients-logo/8.png"
+                      class="clientsimgs"
+                      alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- End Client Section -->
 
+    <!-- Start Footer Section -->
 
+    <footer class="px-3 py-2 footers">
+      <div class="container-fluid">
+        <div class="row my-5">
+          <div class="col-lg-3 col-md-3 col-sm-12 px-2 text-light">
+            <h5 class="border-bottom fw-bold text-light pb-2">About Us.</h5>
+            <p class="lead" style="font-size: 15px">
+              We are a passionate digital design agency that specializes in
+              beautiful and easy-to-use digital design & web development
+              services.
+            </p>
+            <small>
+              <div class="d-flex justify-content-start">
+                <p>Social :</p>
+                <i class="icofont-facebook px-2"></i>
+                <i class="icofont-twitter px-2"></i>
+                <i class="icofont-linkedin px-2"></i>
+                <i class="icofont-behance px-2"></i>
+                <i class="icofont-instagram px-2"></i>
+              </div>
+            </small>
+          </div>
 
+          <div class="col-lg-3 col-md-3 col-sm-12 px-2">
+            <h5 class="border-bottom fw-bold text-light pb-2">
+              Instagram Feed
+            </h5>
 
+            <div class="d-flex w-100">
+              <img src="./assets/img/bg3.jpg" class="w-100 mx-1" alt="" />
+              <img src="./assets/img/bg2.jpg" class="w-100 mx-1" alt="" />
+              <img src="./assets/img/bg1.jpg" class="w-100 mx-1" alt="" />
+            </div>
 
+            <div class="d-flex w-100">
+              <img src="./assets/img/bg2.jpg" class="w-100 mx-1 my-1" alt="" />
+              <img src="./assets/img/bg1.jpg" class="w-100 mx-1 my-1" alt="" />
+              <img src="./assets/img/bg3.jpg" class="w-100 mx-1 my-1" alt="" />
+            </div>
+          </div>
 
+          <div class="col-lg-3 col-md-3 col-sm-12 px-2">
+            <h5 class="border-bottom fw-bold text-light pb-2">Tag Cloud</h5>
+            <div class="row">
+              <div class="col-3 my-2">
+                <a
+                  href=""
+                  class="btn btn-outline-warning btn-sm rounded-0 px-2 my-2"
+                  >Build</a
+                >
+                <a
+                  href=""
+                  class="btn btn-outline-warning btn-sm rounded-0 px-2 my-2"
+                  >Magazine</a
+                >
+                <a
+                  href=""
+                  class="btn btn-outline-warning btn-sm rounded-0 px-2 my-2"
+                  >Link</a
+                >
+              </div>
+              <div class="col-3 my-2">
+                <a
+                  href=""
+                  class="btn btn-outline-warning btn-sm rounded-0 px-2 my-2"
+                  >Example</a
+                >
+                <a
+                  href=""
+                  class="btn btn-outline-warning btn-sm rounded-0 px-2 mx-2 my-2"
+                  >UI/UX</a
+                >
+                <a
+                  href=""
+                  class="btn btn-outline-warning btn-sm rounded-0 px-2 my-2"
+                  >Video</a
+                >
+              </div>
+              <div class="col-3 my-2">
+                <a
+                  href=""
+                  class="btn btn-outline-warning btn-sm rounded-0 px-2 my-2"
+                  >Gallery</a
+                >
+                <a
+                  href=""
+                  class="btn btn-outline-warning btn-sm rounded-0 px-2 my-2"
+                  >Quote</a
+                >
+              </div>
+            </div>
+          </div>
 
+          <div class="col-lg-3 col-md-3 col-sm-12 text-white">
+            <h5 class="border-bottom fw-bold text-light">Contact Info.</h5>
+            <address>
+              <small class="d-flex"
+                ><i class="icofont-location-pin"></i>
 
+                <p class="mx-2">
+                  2653 Filbert Street, Pennsylvania, Northampton
+                </p></small
+              >
+            </address>
 
+            <div>
+              <small class="d-flex"
+                ><i class="icofont-phone"></i>
+                <p class="mx-2">Call Us : 610-787-1777 / 570-350-3188</p></small
+              >
+            </div>
 
+            <div>
+              <small class="d-flex"
+                ><i class="icofont-email"></i>
+                <a href="mailto:kyawsan84yay@gmail.com" class="nav-link mx-2"
+                  >Email : Support_Info@Email.Com
+                </a></small
+              >
+            </div>
 
+            <div class="my-2">
+              <small class="d-flex">
+                <i class="icofont-clock-time"></i>
+                <p class="mx-2">
+                  Working Time : Mon-Sat : 08:00 - 18:00
+                </p></small
+              >
+            </div>
 
+            <form class="form-group" action="">
+              <div class="d-flex">
+                <input
+                  type="text"
+                  class="form-control bg-transparent text-white border border-dark mx-2 emails"
+                  placeholder="Enter Email" />
+                <button class="btn btn-sm btn-warning text-white py-2rounded-0">
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
 
+        <div class="border-top my-4 text-center text-white">
+          <p class="my-2 py-2">
+            © <span id="year"></span> UI-ThemeZ. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
 
-
-
-
-
+    <!-- End Footer Section -->
 
     <!-- bootstrap css1 js1 -->
     <script src="./assets/libs/bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
@@ -784,27 +1369,8 @@
     <!-- lightbox css1 js1 -->
     <script src="./assets/libs/lightbox2-2.11.4/dist/js/lightbox.min.js"></script>
 
-
     <!-- custom js1 -->
     <script src="./js/app.js"></script>
-
-
-</body>
-
+  </body>
 </html>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- https://ui-themez.smartinnovates.net/items/constex/index1.html -->
